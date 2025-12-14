@@ -173,12 +173,12 @@ classes = ['No DR', 'Mild DR', 'Moderate DR', 'Severe DR', 'Proliferative DR']
 print(f"Prediction: {classes[pred]}")
 ```
 
-```markdown
 ### **5. Launch Streamlit Demo**
 ```bash
 streamlit run deployment/app.py
-```
 Then open: http://localhost:8501
+
+```
 <img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-14-18_52_05" src="https://github.com/user-attachments/assets/3838ea71-7dd0-4807-9379-50ecc3bf3893" />
 ---
 
