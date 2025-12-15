@@ -179,8 +179,8 @@ streamlit run deployment/app.py
 Then open: http://localhost:8501
 
 ```
-<img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-14-18_52_05" src="https://github.com/user-attachments/assets/3838ea71-7dd0-4807-9379-50ecc3bf3893" />
----
+<img width="2543" height="712" alt="Screenshot 2025-12-15 221510" src="https://github.com/user-attachments/assets/fedf8df7-18ab-44c1-8ab6-8447ba062dc5" />
+
 
 ## 📈 Evaluation Details
 
@@ -188,6 +188,9 @@ Then open: http://localhost:8501
 - **Strong diagonal** indicating good overall classification
 - **Minor confusion** between adjacent severity levels (expected in medical imaging)
 - **Excellent separation** for critical classes (Severe/Proliferative)
+```
+<img width="4592" height="1772" alt="confusion_matrix" src="https://github.com/user-attachments/assets/a979ba8d-a96e-4b95-bcad-649eeeda0a57" />
+```
 
 ### **ROC-AUC Scores**
 - No DR: 0.896
