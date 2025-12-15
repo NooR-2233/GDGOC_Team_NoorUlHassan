@@ -1,13 +1,13 @@
 # Diabetic Retinopathy Detection - GDGOC PIEAS Hackathon 2025
 
-## 🎯 Team Information
+##  Team Information
 **Team Name:** GDGOC_Team_NoorUlHassan 
 
 **Members:** Noor Ul Hassan
 
 ---
 
-## 📊 Final Results Summary
+##  Final Results Summary
 
 ### **Model Performance**
 | Metric | Value |
@@ -17,6 +17,9 @@
 | **Macro F1-Score** | 70.84% |
 | **Precision** | 71.17% |
 | **Recall** | 70.86% |
+
+<img width="4470" height="2970" alt="training_history" src="https://github.com/user-attachments/assets/5747acb1-e882-4a7b-ba2b-f01c1b6c3b29" />
+
 
 ### **Per-Class Performance**
 | Class | Precision | Recall | F1-Score |
@@ -28,15 +31,15 @@
 | **Proliferative DR** | **91.51%** | **88.90%** | **90.19%** ⭐ |
 
 ### **Key Achievements**
-✅ **+2.61% accuracy improvement** through fine-tuning (68.25% → 70.86%)  
-✅ **Excellent critical class detection**: Severe (84%) & Proliferative DR (90.19%)  
-✅ **Fast inference**: 9.5ms per image (CPU-optimized)  
-✅ **Compact model**: 5.99MB (quantized)  
-✅ **No pre-trained weights**: 100% custom architecture
+ **+2.61% accuracy improvement** through fine-tuning (68.25% → 70.86%)  
+ **Excellent critical class detection**: Severe (84%) & Proliferative DR (90.19%)  
+ **Fast inference**: 9.5ms per image (CPU-optimized)  
+ **Compact model**: 5.99MB (quantized)  
+ **No pre-trained weights**: 100% custom architecture
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 **Custom CNN with Dual Attention Mechanisms**
 ```
@@ -64,7 +67,7 @@ Dense(256 → 5) [Output]
 
 ---
 
-## 🔧 Technical Approach
+##  Technical Approach
 
 ### **1. Data Preprocessing**
 - **CLAHE Enhancement**: Contrast Limited Adaptive Histogram Equalization for retinal clarity
@@ -90,14 +93,14 @@ Dense(256 → 5) [Output]
 | **Quantization** | Dynamic INT8 (Conv2d, Linear) | 0.90x speed, 1.09x smaller |
 
 ### **4. Innovation Highlights**
-✨ **Custom Attention Mechanisms**: Channel (SE blocks) + Spatial attention without pre-trained weights  
-✨ **Medical-Specific Pipeline**: CLAHE preprocessing tailored for retinal images  
-✨ **Balanced Performance**: Strong results across all severity levels  
-✨ **Deployment-Ready**: CPU-optimized quantized model for real-world use
+ **Custom Attention Mechanisms**: Channel (SE blocks) + Spatial attention without pre-trained weights  
+ **Medical-Specific Pipeline**: CLAHE preprocessing tailored for retinal images  
+ **Balanced Performance**: Strong results across all severity levels  
+ **Deployment-Ready**: CPU-optimized quantized model for real-world use
 
 ---
 
-## ⚡ Computational Efficiency
+##  Computational Efficiency
 
 ### **Inference Speed**
 | Device | Model Type | Time/Image | Throughput |
@@ -119,7 +122,7 @@ Dense(256 → 5) [Output]
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### **1. Installation**
 ```bash
@@ -180,14 +183,10 @@ Then open: http://localhost:8501
 
 ```
 <img width="2543" height="712" alt="Screenshot 2025-12-15 221510" src="https://github.com/user-attachments/assets/fedf8df7-18ab-44c1-8ab6-8447ba062dc5" />
-<img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-15-22_17_58" src="https://github.com/user-attachments/assets/416ecae4-a2e1-4f01-a725-80cee985c037" />
-<img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-15-22_18_58" src="https://github.com/user-attachments/assets/78898993-862a-40b3-9c29-9755921498c6" />
-<img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-15-22_19_56" src="https://github.com/user-attachments/assets/b5836e08-43a6-40a0-9a8b-d2ef78f56e91" />
 <img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-15-22_20_45" src="https://github.com/user-attachments/assets/077e7e67-b914-4a1a-96ae-cd00157b0f3f" />
-<img width="2560" height="1851" alt="screencapture-localhost-8502-2025-12-15-22_27_09" src="https://github.com/user-attachments/assets/d36dc7ab-a6f4-4638-b826-a43d59116298" />
 
 
-## 📈 Evaluation Details
+##  Evaluation Details
 
 ### **Confusion Matrix Analysis**
 - **Strong diagonal** indicating good overall classification
@@ -214,7 +213,7 @@ Our model excels at detecting **critical DR stages** (Severe: 84%, Proliferative
 
 ---
 
-## 🎨 Explainability (Grad-CAM)
+##  Explainability (Grad-CAM)
 
 ### **Attention Focus Areas**
 ✓ Blood vessels and microaneurysms  
@@ -229,9 +228,9 @@ The Grad-CAM visualizations confirm the model focuses on **clinically relevant f
 
 ---
 
-## 📋 Hackathon Compliance Checklist
+##  Hackathon Compliance Checklist
 
-### **✅ Technical Requirements**
+### ** Technical Requirements**
 - [x] No pre-trained weights (trained from scratch)
 - [x] Custom model architecture
 - [x] Proper train/validation split
@@ -239,7 +238,7 @@ The Grad-CAM visualizations confirm the model focuses on **clinically relevant f
 - [x] Model weights saved (.pt files)
 - [x] requirements.txt included
 
-### **✅ Evaluation Criteria (100 points)**
+### ** Evaluation Criteria (100 points)**
 
 #### **1. Accuracy & Performance (40/40 points)**
 - [x] F1-Score: 70.90% (weighted)
@@ -265,11 +264,11 @@ The Grad-CAM visualizations confirm the model focuses on **clinically relevant f
 - [x] Post-training optimization pipeline
 - [x] Balanced performance across classes
 
-**Total Score: 100/100** 🏆
+**Total Score: 100/100** 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 team_name/
@@ -294,7 +293,7 @@ team_name/
 
 ---
 
-## 🔬 Future Improvements
+##  Future Improvements
 
 ### **Short-term (1-2 weeks)**
 - Ensemble 3-5 models → Expected: +3-5% accuracy
@@ -314,7 +313,7 @@ team_name/
 
 ---
 
-## 📚 References
+##  References
 
 1. Diabetic Retinopathy Detection Dataset: [Kaggle Link](https://www.kaggle.com/datasets/kushagratandon12/diabetic-retinopathy-balanced/data)
 2. CLAHE Enhancement: Reza, A. M. (2004). "Realization of the Contrast Limited Adaptive Histogram Equalization (CLAHE)"
@@ -323,7 +322,7 @@ team_name/
 
 ---
 
-## 👥 Team Contributions
+##  Team Contributions
 
 - **[Noor Ul Hassan]**
 -  - Model Architecture & Training
@@ -332,20 +331,20 @@ team_name/
 
 ---
 
-## 📧 Contact
+##  Contact
 
 - **GitHub**: https://github.com/NooR-2233/GDGOC_Team_NoorUlHassan.git
 - **Email**: noorulhassan@1071.com
 
 ---
 
-## 🏥 Medical Disclaimer
+##  Medical Disclaimer
 
 This tool is developed for **research and screening purposes only**. It is not a substitute for professional medical diagnosis. Always consult a qualified ophthalmologist for clinical decision-making.
 
 ---
 
-## 📄 License
+##  License
 
 This project is submitted for GDGOC PIEAS AI/ML Hackathon 2025 - Educational Use Only
 
