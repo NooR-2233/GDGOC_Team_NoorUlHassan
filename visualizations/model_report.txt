@@ -27,34 +27,34 @@ PREPROCESSING:
 - ImageNet normalization
 
 FINAL RESULTS:
-- Best Validation F1-Score: 0.6830
-- Final Accuracy: 0.7086
-- Weighted F1: 0.7090
-- Macro F1: 0.7084
-- Weighted Precision: 0.7117
-- Weighted Recall: 0.7086
+- Best Validation F1-Score: 0.6890
+- Final Accuracy: 0.7077
+- Weighted F1: 0.7102
+- Macro F1: 0.7096
+- Weighted Precision: 0.7150
+- Weighted Recall: 0.7077
 
 PER-CLASS F1-SCORES:
-- No DR: 0.6398
-- Mild DR: 0.6082
-- Moderate DR: 0.5522
-- Severe DR: 0.8400
-- Proliferative DR: 0.9019
+- No DR: 0.6262
+- Mild DR: 0.6118
+- Moderate DR: 0.5550
+- Severe DR: 0.8449
+- Proliferative DR: 0.9101
 
 INFERENCE PERFORMANCE:
-- Single Image: 19.01 ms (52.59 FPS)
+- Single Image: 13.77 ms (72.64 FPS)
 
 ======================================================================
-Generated: 2025-12-14 17:17:30
+Generated: 2025-12-15 22:03:57
 
 
 POST-TRAINING OPTIMIZATION:
-- Fine-tuning:     0.6830 → 0.7090 (+0.0260)
-- Quantization:    0.7090 → 0.7082 (drop: 0.0008)
-- Speed Improvement: 0.90x faster
+- Fine-tuning:     0.6890 → 0.7102 (+0.0212)
+- Quantization:    0.7102 → 0.7071 (drop: 0.0031)
+- Speed Improvement: 0.88x faster
 - Size Reduction:    1.09x smaller
 
 COMPUTATIONAL EFFICIENCY (Hackathon Criteria - 20%):
-- Original Inference:  8.59 ms/image
-- Quantized Inference: 9.53 ms/image
+- Original Inference:  7.94 ms/image
+- Quantized Inference: 9.06 ms/image
 - Deployment-ready:    YES (CPU-optimized)
